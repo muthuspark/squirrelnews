@@ -13,3 +13,9 @@ Run `grunt build` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+##Follow me
+You can find me at [http://muthu.co](http://muthu.co) 
+
+##License
+Do whatever you want with this
