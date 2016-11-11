@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 subscriptions">
+            <selectize config="newsSourceConfig" options="sources" ng-model="source"></selectize>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="list-group fixedheight">
+                <a href class="list-group-item" ng-click="fetchNews(source.id)" ng-repeat="source in sources">
+                    {{source.name}}
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-10 news-container">
+            <div class="media news-article" ng-repeat="article in news">
+                <div class="media-left">
+                    <img class="media-object" ng-src="{{article.urlToImage}}" alt="...">
+                </div>
+                <div class="media-body">
+                    <h4><a href="{{article.url}}">{{article.title}}</a></h4>
+                    <small>{{article.author}}</small>
+                    <p>{{article.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
