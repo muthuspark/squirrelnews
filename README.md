@@ -1,11 +1,14 @@
 # squirrelnews
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+###A news app built using the APIs from newsapi.org
+![Alt text](/app/images/screenshot.png?raw=true "Squirrelnews screenshot")
+
+The app doesn't need any backend. You can build it using `grunt` and deploy the contents of dist folder in any http server of your choice.
+
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `grunt build` for building and `grunt serve` for preview.
 
 ## Testing
 
